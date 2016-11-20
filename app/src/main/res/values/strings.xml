@@ -3,4 +3,6 @@
     <string name="title_level_province">中国的</string>
     <string name="http_query_failed">加载失败</string>
     <string name="loading">正在加载。。。</string>
+    <string name="syncing">同步中...</string>
+    <string name="sync_failed">同步失败</string>
 </resources>
