@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -28,6 +29,8 @@ import java.util.List;
  * Created by whjin on 16-11-11.
  */
 public class ChooseAreaActivity extends Activity {
+    private static final String TAG = "ChooseAreaActivity";
+
     private static final int LEVEL_PROVINCE = 0;
     private static final int LEVEL_CITY = 1;
     private static final int LEVEL_COUNTY = 2;
@@ -74,6 +77,7 @@ public class ChooseAreaActivity extends Activity {
 
     private void queryProvince() {
         provinceList = coolWeatherDB.loadProvince();
+        Log.d(TAG, "queryProvince from db size = " + provinceList.size());
         if (provinceList.size() > 0) {
             dataList.clear();
             for (Province p : provinceList) {
@@ -100,6 +104,7 @@ public class ChooseAreaActivity extends Activity {
             textView.setText(selectedProvince.getProvinceName());
             currentLevel = LEVEL_CITY;
         } else {
+            Log.d(TAG, "province code =========" + selectedProvince.getProvinceCode());
             queryFromServer(selectedProvince.getProvinceCode(), "city");
         }
     }
@@ -116,22 +121,33 @@ public class ChooseAreaActivity extends Activity {
             textView.setText(selectedCity.getCityName());
             currentLevel = LEVEL_COUNTY;
         } else {
-            queryFromServer(selectedCity.getCityCode(), "county");
+            queryFromServer(selectedProvince.getProvinceCode()+selectedCity.getCityCode(), "county");
         }
     }
 
     private void queryFromServer(final String code, final String type) {
         String address;
         if (!TextUtils.isEmpty(code)) {
-            address = "http://www.weather.com.cn/data/list3/city" + code + ".xml";
+            Log.d(TAG, "code ================" + code);
+            Log.d(TAG, "type ================" + type);
+            if ("city".equals(type)) {
+                //http://www.weather.com.cn/data/city3jdata/provshi/10120.html
+                address = "http://www.weather.com.cn/data/city3jdata/provshi/" + code + ".html";
+            } else if ("county".equals(type)) {
+                //http://www.weather.com.cn/data/city3jdata/station/1012002.html
+                address = "http://www.weather.com.cn/data/city3jdata/station/" + code + ".html";
+            } else {
+                address = "";
+            }
         } else {
-            address = "http://www.weather.com.cn/data/list3/city.xml";
+            address = "http://www.weather.com.cn/data/city3jdata/china.html";
         }
         showProgressDialog();
         httpUtil.sendHttpRequest(address, new HttpCallbackListener() {
             @Override
             public void onFinish(String response) {
                 boolean result = false;
+                Log.d(TAG, "onFinish response =======" + response);
                 if ("province".equals(type)) {
                     result = Utility.handleProvinceResponse(coolWeatherDB, response);
                 } else if ("city".equals(type)) {
@@ -158,6 +174,7 @@ public class ChooseAreaActivity extends Activity {
 
             @Override
             public void onError(Exception e) {
+                Log.d(TAG, "onError ================");
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

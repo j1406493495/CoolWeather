@@ -30,6 +30,51 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8acfcfadd229ac16f491eee8375b22245d355f03">
+        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0965650d544d2947ab8ee540c25663b19d10e56e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_e66696e5fa37af932085ea6add30296680568443\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_6b7de76717ac438afd15268f70fc41a4a3621e3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_2d75a2efa02be7dc6410e6c3315f775fc22ea1eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_134dad02573feb744cc23db8b1142f75d33d8c31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,20 +84,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8aa6aea8bf0b77ab270fe8a0b211370123ada9db">
-        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0965650d544d2947ab8ee540c25663b19d10e56e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="d069da38448e48b8f6fb91a12d9f27947aab50a0">
+        sha1="9d95211afb33aece01f3ff2a464de50fce26148a">
         <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_14568bd03cd7e553877d400def8004bb94dfe2be\classes.dex" />
     </item>
     <item
@@ -66,30 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_e66696e5fa37af932085ea6add30296680568443\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
         <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_34bb60814cec941712ec953e83405082d17bf7da\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_6b7de76717ac438afd15268f70fc41a4a3621e3d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,30 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_2d75a2efa02be7dc6410e6c3315f775fc22ea1eb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
         <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_caf1de1c2eb8790d41a0f7fe1dd57f2fe0bab7ec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="D:\AndroidStudioProjects\CoolWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_134dad02573feb744cc23db8b1142f75d33d8c31\classes.dex" />
     </item>
     <item
         is-multidex="true"
